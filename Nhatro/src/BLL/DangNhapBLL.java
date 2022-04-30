@@ -1,0 +1,19 @@
+package BLL;
+import DAL.DangNhapDAL;
+import Entity.DangNhapEntity;
+import java.sql.ResultSet;
+
+public class DangNhapBLL 
+{
+    DangNhapDAL dangnhap = new DangNhapDAL();
+    
+    public ResultSet KiemtraTaiKhoan(DangNhapEntity dangnhapentity) throws Exception
+    {
+        return dangnhap.KiemtraTaiKhoan(dangnhapentity);
+    }
+    
+    public ResultSet KiemtraTaiKhoanNV(DangNhapEntity dangnhapentity) throws Exception
+    {
+        return dangnhap.KiemtraTaiKhoanNV(dangnhapentity);
+    }
+}
